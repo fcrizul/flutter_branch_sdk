@@ -4,7 +4,7 @@ version '1.0'
 buildscript {
     repositories {
         google()
-        jcenter()
+        mavenCentral()
     }
 
     dependencies {
@@ -15,7 +15,7 @@ buildscript {
 rootProject.allprojects {
     repositories {
         google()
-        jcenter()
+        mavenCentral()
     }
 }
 
@@ -34,8 +34,8 @@ android {
 }
 
 dependencies {
-    implementation 'io.branch.sdk.android:library:5.+'
+    implementation 'io.branch.sdk.android:library:5.0.13'
     implementation 'com.google.firebase:firebase-appindexing:19.0.0'
-    implementation 'com.google.android.gms:play-services-ads-identifier:16+'
+    implementation 'com.google.android.gms:play-services-ads-identifier:16.0.0'
     implementation 'androidx.browser:browser:1.0.0'
 }
